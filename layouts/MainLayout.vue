@@ -70,7 +70,7 @@
                           </li>
                           <li 
                               v-if="user" 
-                              @click="client.auth.signOut()"
+                              @click="handleSignOut"
                               class="text-[13px] py-2 px-4 w-full hover:bg-gray-200"
                           >
                               Sign out
@@ -226,4 +226,9 @@ watch(() => searchItem.value, async () => {
   }
   searchByName() 
 })
+
+const handleSignOut = async () => {
+    await client.auth.signOut()
+    navigateTo('/')  
+}
 </script>
