@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt', // State management
     '@pinia-plugin-persistedstate/nuxt', // Persist Pinia state
     '@nuxtjs/tailwindcss', // CSS framework
-    // '@nuxtjs/supabase' // Backend integration
+    '@nuxtjs/supabase' // Backend integration
   ],
   // Runtime configuration
   runtimeConfig: {

@@ -1,3 +1,4 @@
+
 <template>
     <div id="MenuOverlay" class="fixed z-50 bottom-0 h-full w-full bg-white px-3">
         <div class="flex items-center justify-between py-5">
@@ -58,7 +59,6 @@
                         <span class="pl-4">Cart</span>
                     </div>
                     <div 
-                        v-if="userStore?.cart"
                         class="
                             flex 
                             items-center 
