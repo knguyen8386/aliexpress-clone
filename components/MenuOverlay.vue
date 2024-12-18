@@ -58,6 +58,7 @@
                         <span class="pl-4">Cart</span>
                     </div>
                     <div 
+                        v-if="userStore?.cart"
                         class="
                             flex 
                             items-center 
